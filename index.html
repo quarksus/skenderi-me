@@ -3,22 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f5f7fa">
 <title>Jasmin Skenderi — Executive &amp; Product Technology Consultant</title>
 <meta name="description" content="Jasmin Skenderi — executive technology and product consultant. Fractional CTO, product strategy, engineering leadership, IoT/IIoT architecture, and AI-native product development.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<a class="skip-link" href="#top">Skip to content</a>
 
 <header class="site-header">
   <div class="wrap header-inner">
     <a href="#top" class="brand">Jasmin Skenderi</a>
-    <nav class="nav">
+    <nav class="nav" aria-label="Main navigation">
       <a href="#about">About</a>
       <a href="#services">Consulting</a>
-      <a href="#track-record">Track Record</a>
+      <a href="#track-record">Experience</a>
       <a href="#contact">Contact</a>
     </nav>
   </div>
@@ -30,22 +32,25 @@
     <div class="wrap hero-inner">
       <div class="hero-text">
         <p class="eyebrow">Executive &amp; Product Technology Consulting</p>
-        <h1>I help executives and engineering organizations build products that scale.</h1>
-        <p class="hero-sub">20+ years as CTO and CEO across Industrial IoT, IoT, and AI ventures — from early-stage products to enterprise-grade, production-critical deployment. Now consulting on fractional CTO leadership, product strategy, and AI-native engineering.</p>
+        <h1>Technology leadership.<br>From the boardroom<br>to the build.</h1>
+        <p class="hero-sub">I’m Jasmin Skenderi. I help companies turn complex technology into products that work, and build the engineering teams behind them.</p>
         <div class="cta-row">
-          <a class="btn btn-primary" href="assets/Jasmin_Skenderi_CV.pdf" download>Download CV</a>
-          <a class="btn btn-secondary" href="#contact">Get in touch</a>
+          <a class="btn btn-primary" href="#contact">Let’s talk</a>
+          <a class="btn btn-secondary" href="assets/Jasmin_Skenderi_CV.pdf" download>Download CV</a>
         </div>
       </div>
       <div class="hero-photo">
-        <img src="assets/jasmin.jpg" alt="Portrait of Jasmin Skenderi">
+        <img src="assets/jasmin.jpg" alt="Jasmin Skenderi" width="431" height="542" fetchpriority="high">
+        <p class="portrait-caption">Independent technology consultant<br>Berlin, Germany</p>
       </div>
     </div>
   </section>
 
+  <div class="experience-strip wrap"><p>20+ years in technology</p><p>Former CTO, Cybus</p><p>Former CTO &amp; Executive Board Member, Next Big Thing</p></div>
+
   <section id="about" class="section">
     <div class="wrap">
-      <h2>About</h2>
+      <h2>Built on experience.</h2>
       <p class="lede">Executive technology leader with 20+ years across hardware, embedded systems, software, and cloud — including a decade in C-level roles building and scaling Industrial IoT, IoT, blockchain, and AI ventures for military, automotive, manufacturing, medical, and consumer markets.</p>
       <p>Most recently CTO at Cybus GmbH, where I scaled an Industrial IoT platform from early-stage to enterprise-grade, production-critical deployment across large, multi-site environments — while sustaining 0% voluntary team turnover across the entire engineering organization. Before that, six years as CTO and Executive Board Member at Next Big Thing AG, an IoT venture studio, where I owned technology strategy across a portfolio of ventures spanning MedTech, energy management, blockchain, secure hardware, and industrial asset management.</p>
       <p>I'm currently working intensively with LLMs and agentic AI, with a hands-on track record of using AI to accelerate delivery, tooling, and productivity within engineering teams — and I bring that same practical, outcome-driven approach to every consulting engagement.</p>
@@ -54,7 +59,7 @@
 
   <section id="services" class="section section-alt">
     <div class="wrap">
-      <h2>What I Consult On</h2>
+      <h2>Where I can help.</h2><p class="section-intro">Executive perspective. Hands-on engineering. Support where your business needs it.</p>
       <div class="cards">
         <div class="card">
           <h3>Fractional &amp; Interim CTO</h3>
@@ -86,7 +91,7 @@
 
   <section id="track-record" class="section">
     <div class="wrap">
-      <h2>Track Record</h2>
+      <h2>Leadership in practice.</h2>
       <div class="stats">
         <div class="stat">
           <span class="stat-num">20+</span>
@@ -98,7 +103,7 @@
         </div>
         <div class="stat">
           <span class="stat-num">30+</span>
-          <span class="stat-label">Engineering organizations built and led</span>
+          <span class="stat-label">People in engineering teams built and led</span>
         </div>
         <div class="stat">
           <span class="stat-num">6</span>
@@ -110,7 +115,7 @@
 
   <section id="contact" class="section section-alt">
     <div class="wrap contact-wrap">
-      <h2>Get in Touch</h2>
+      <h2>Let’s work through<br>what’s next.</h2>
       <p>Open to fractional CTO engagements, product and technology advisory, and speaking on IoT, engineering leadership, and applied AI.</p>
 
       <form class="contact-form" action="https://formsubmit.co/jasmin.skenderi@gmail.com" method="POST">
@@ -120,21 +125,20 @@
         <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
         <div class="form-row">
           <label>Name
-            <input type="text" name="name" required>
+            <input type="text" name="name" autocomplete="name" required>
           </label>
           <label>Email
-            <input type="email" name="email" required>
+            <input type="email" name="email" autocomplete="email" spellcheck="false" required>
           </label>
         </div>
         <label>Message
-          <textarea name="message" rows="5" required></textarea>
+          <textarea name="message" autocomplete="off" rows="5" required></textarea>
         </label>
-        <button type="submit" class="btn btn-primary">Send Message</button>
+        <button type="submit" class="btn btn-primary">Send message</button>
       </form>
 
-      <p class="contact-alt">Prefer email or LinkedIn directly?</p>
+      <p class="contact-alt">Prefer to connect on LinkedIn?</p>
       <div class="contact-links">
-        <a class="btn btn-secondary" href="mailto:jasmin.skenderi@gmail.com">jasmin.skenderi@gmail.com</a>
         <a class="btn btn-secondary" href="https://de.linkedin.com/in/jskenderi" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </div>
