@@ -1,0 +1,185 @@
+:root {
+  --accent: #0F4C5C;
+  --accent-light: #5B7B8A;
+  --accent-pale: #EAF1F2;
+  --ink: #1A1A1A;
+  --ink-soft: #4A4A4A;
+  --bg: #FFFFFF;
+  --bg-alt: #F7F9FA;
+  --rule: #DCE4E6;
+  --serif: 'Source Serif 4', Georgia, serif;
+  --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: var(--sans);
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.65;
+}
+
+.wrap {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+img { max-width: 100%; display: block; }
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+h1, h2, h3 {
+  font-family: var(--serif);
+  color: var(--accent);
+  line-height: 1.2;
+  margin: 0 0 0.5em;
+}
+
+h1 { font-size: clamp(2rem, 4vw, 2.9rem); font-weight: 600; }
+h2 { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 600; margin-bottom: 1em; }
+h3 { font-size: 1.15rem; font-weight: 600; }
+
+p { margin: 0 0 1em; color: var(--ink-soft); }
+p.lede { font-size: 1.15rem; color: var(--ink); }
+
+/* Header */
+.site-header {
+  position: sticky;
+  top: 0;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--rule);
+  z-index: 10;
+}
+.header-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 8px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.brand {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 1.15rem;
+  color: var(--accent);
+}
+.brand:hover { text-decoration: none; }
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+}
+.nav a {
+  color: var(--ink);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+.nav a:hover { color: var(--accent); text-decoration: none; }
+
+/* Hero */
+.hero { padding: 72px 0 64px; }
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 56px;
+  align-items: center;
+}
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent-light);
+  margin-bottom: 14px;
+}
+.hero-sub { font-size: 1.08rem; margin-top: 20px; }
+.hero-photo img {
+  border-radius: 16px;
+  box-shadow: 0 12px 32px rgba(15, 76, 92, 0.18);
+}
+
+.cta-row { display: flex; gap: 14px; margin-top: 28px; flex-wrap: wrap; }
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.btn:hover { text-decoration: none; }
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+}
+.btn-primary:hover { background: #0c3c48; }
+.btn-secondary {
+  background: transparent;
+  color: var(--accent);
+  border: 1.5px solid var(--accent);
+}
+.btn-secondary:hover { background: var(--accent-pale); }
+
+/* Sections */
+.section { padding: 64px 0; }
+.section-alt { background: var(--bg-alt); }
+
+/* Services cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+.card {
+  background: #fff;
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  padding: 28px;
+}
+.card h3 { color: var(--accent); }
+.card p { margin-bottom: 0; font-size: 0.96rem; }
+
+/* Stats */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 32px;
+}
+.stat { text-align: left; }
+.stat-num {
+  display: block;
+  font-family: var(--serif);
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.stat-label { color: var(--ink-soft); font-size: 0.95rem; }
+
+/* Contact */
+.contact-wrap { text-align: left; }
+.contact-links { display: flex; gap: 14px; margin-top: 24px; flex-wrap: wrap; }
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid var(--rule);
+  padding: 28px 0;
+}
+.site-footer p { margin: 0; font-size: 0.85rem; color: var(--accent-light); }
+
+/* Responsive */
+@media (max-width: 760px) {
+  .hero-inner { grid-template-columns: 1fr; }
+  .hero-photo { max-width: 220px; margin: 0 auto; }
+  .nav { gap: 6px 14px; }
+  .nav a { font-size: 0.88rem; }
+}
