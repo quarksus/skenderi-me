@@ -112,8 +112,29 @@
     <div class="wrap contact-wrap">
       <h2>Get in Touch</h2>
       <p>Open to fractional CTO engagements, product and technology advisory, and speaking on IoT, engineering leadership, and applied AI.</p>
+
+      <form class="contact-form" action="https://formsubmit.co/jasmin.skenderi@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New inquiry from skenderi.me">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://www.skenderi.me/thank-you.html">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+        <div class="form-row">
+          <label>Name
+            <input type="text" name="name" required>
+          </label>
+          <label>Email
+            <input type="email" name="email" required>
+          </label>
+        </div>
+        <label>Message
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+
+      <p class="contact-alt">Prefer email or LinkedIn directly?</p>
       <div class="contact-links">
-        <a class="btn btn-primary" href="mailto:jasmin.skenderi@gmail.com">jasmin.skenderi@gmail.com</a>
+        <a class="btn btn-secondary" href="mailto:jasmin.skenderi@gmail.com">jasmin.skenderi@gmail.com</a>
         <a class="btn btn-secondary" href="https://de.linkedin.com/in/jskenderi" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </div>
@@ -122,8 +143,9 @@
 </main>
 
 <footer class="site-footer">
-  <div class="wrap">
+  <div class="wrap footer-inner">
     <p>&copy; <span id="year"></span> Jasmin Skenderi &middot; Berlin, Germany</p>
+    <a href="impressum.html">Impressum</a>
   </div>
 </footer>
 
