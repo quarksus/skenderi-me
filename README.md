@@ -1,12 +1,12 @@
 # skenderi.me
 
-Jasmin Skenderi's personal consulting website, hosted on GitHub Pages at [www.skenderi.me](https://www.skenderi.me).
+Jasmin Skenderi's personal website, hosted on GitHub Pages at [www.skenderi.me](https://www.skenderi.me).
 
-A static HTML and CSS site with no build step or package dependencies. The design uses a blue-grey palette, Manrope headings, DM Sans body text, a prominent portrait, and open consulting service layouts. Fonts are loaded from Google Fonts.
+A static HTML and CSS site with no build step or package dependencies. The design uses a blue-grey palette, Manrope headings, DM Sans body text, a prominent portrait, and open card layouts. Fonts are loaded from Google Fonts.
 
 ## Files
 
-- `index.html` — consulting homepage, experience, and contact form
+- `index.html` — homepage, expertise, experience, and contact form
 - `style.css` — shared styles, responsive layouts, and keyboard focus states
 - `impressum.html` — legal and contact information
 - `thank-you.html` — contact form confirmation page
