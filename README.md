@@ -2,7 +2,7 @@
 
 Jasmin Skenderi's personal website, hosted on GitHub Pages at [www.skenderi.me](https://www.skenderi.me).
 
-A static HTML and CSS site with no build step or package dependencies. The design uses a blue-grey palette, Manrope headings, DM Sans body text, a prominent portrait, and open card layouts. Fonts are loaded from Google Fonts.
+A static HTML and CSS site with no build step or package dependencies. The design uses a blue-grey palette with an Apple-style finish: the system font (San Francisco on Apple devices, Inter from Google Fonts elsewhere) with size-specific tracking, a translucent sticky header, pill buttons with press feedback, rounded expertise tiles, and automatic light and dark themes. It also respects reduced-motion, reduced-transparency, and increased-contrast settings.
 
 ## Files
 
@@ -24,6 +24,9 @@ python3 -m http.server 8743 --bind 127.0.0.1
 Then open [the local preview](http://127.0.0.1:8743).
 
 ## Design skills used
+
+The Apple-style refinement was done with Claude Code using the **[apple-design](https://github.com/emilkowalski/skills/tree/main/skills/apple-design)** skill.
+
 
 The original site was built with Claude. The subsequent redesign was implemented with Codex using these skills:
 
